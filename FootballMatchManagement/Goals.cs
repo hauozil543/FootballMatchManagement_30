@@ -19,25 +19,25 @@ namespace FootballMatchManagement
         }
         ConnectDatabase kn = new ConnectDatabase();
 
-        private void btnBack_Click(object sender, EventArgs e)
+        public void btnBack_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
             this.Hide();
             menu.Show();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        public void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Do you want to exit.", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
-                Application.ExitThread();
+                this.Close();
             }
             else
             { }
         }
 
-        private void Goals_Load(object sender, EventArgs e)
+        public void Goals_Load(object sender, EventArgs e)
         {
             Get_Data();
             txtGoalID.Text = "";
@@ -69,7 +69,7 @@ namespace FootballMatchManagement
             txtMinute.DataBindings.Add("Text", dta_Results.DataSource, "Minute");
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        public void btnRefresh_Click(object sender, EventArgs e)
         {
             txtGoalID.Text = "";
             txtMatchID.Text = "";
@@ -77,7 +77,7 @@ namespace FootballMatchManagement
             txtMinute.Text = "";
         }
 
-        private void btnInsert_Click(object sender, EventArgs e)
+        public void btnInsert_Click(object sender, EventArgs e)
         {
             bool v = string.IsNullOrEmpty(txtGoalID.Text);
             if (v)
@@ -113,7 +113,7 @@ namespace FootballMatchManagement
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        public void btnUpdate_Click(object sender, EventArgs e)
         {
 
             {
@@ -164,7 +164,7 @@ namespace FootballMatchManagement
                 }
             }
         }
-        private void btnDelete_Click(object sender, EventArgs e)
+        public void btnDelete_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtGoalID.Text))
             {

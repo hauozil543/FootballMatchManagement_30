@@ -18,7 +18,7 @@ namespace FootballMatchManagement
             InitializeComponent();
         }
         SqlConnection kn = new SqlConnection(@"Data Source=LAPTOP-N5TTVA9R;Initial Catalog=FootballMatchManagement;Integrated Security=True;");
-        private void btnExit_Click(object sender, EventArgs e)
+        public void btnExit_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show("Do you want to exit.", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
@@ -30,12 +30,12 @@ namespace FootballMatchManagement
 
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        public void Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public void btnLogin_Click(object sender, EventArgs e)
         {
             String username, password;
             username = txtUserName.Text;
@@ -95,7 +95,7 @@ namespace FootballMatchManagement
 
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        public void btnClear_Click(object sender, EventArgs e)
         {
             txtUserName.Clear();
             txtPassWord.Clear();
@@ -103,19 +103,19 @@ namespace FootballMatchManagement
             txtUserName.Focus();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        public void label4_Click(object sender, EventArgs e)
         {
             Register register = new Register();
             this.Hide();
             register.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        public void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        public void label5_Click(object sender, EventArgs e)
         {
 
         }

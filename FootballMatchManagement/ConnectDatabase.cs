@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace FootballMatchManagement
 {
-    internal class ConnectDatabase
+    public  class ConnectDatabase
     {
         public SqlConnection cnn;
         public SqlCommand cmd;
