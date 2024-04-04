@@ -31,6 +31,7 @@ namespace Demo_GUI_Testing__with_FootballMatchManagement
 
                 Assert.IsFalse(goalsForm.IsDisposed);
             }
+            Assert.IsTrue(goalsForm.IsDisposed);
         }
     }
 }

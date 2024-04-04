@@ -45,7 +45,7 @@ namespace Demo_GUI_Testing__with_FootballMatchManagement
 
             kn.Connect_Data();
             SqlCommand cmd = new SqlCommand(sql_insert, kn.cnn);
-            // Tạo truy vấn SQL để kiểm tra thông tin đăng nhập
+                // Tạo truy vấn SQL để kiểm tra thông tin đăng nhập
 
 
             cmd.Parameters.AddWithValue("@username", username);
@@ -57,3 +57,4 @@ namespace Demo_GUI_Testing__with_FootballMatchManagement
             }
         }
     }
+}
