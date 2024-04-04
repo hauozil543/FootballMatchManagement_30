@@ -158,16 +158,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPassWord;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtUserName;
+        public System.Windows.Forms.TextBox txtPassWord;
+        public System.Windows.Forms.Button btnLogin;
+        public System.Windows.Forms.Button btnExit;
+        public System.Windows.Forms.Button btnClear;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
     }
 }
 

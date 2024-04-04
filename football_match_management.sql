@@ -156,3 +156,4 @@ VALUES
 (9, 5, 'A Hau', 35),  -- Goal in PSG vs. Juventus
 (10, 5, 'Salah', 80); -- Another goal in PSG vs. Juventus
 
+select * from users
